@@ -19,7 +19,7 @@
 
 <body class="fontemukta">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light paleta1">
+    <nav class="navbar navbar-expand-lg navbar-light navcor">
       <div class="container-fluid">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile_nav" aria-controls="mobile_nav" aria-expanded="false" aria-label="Toggle navigation">

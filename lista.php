@@ -27,11 +27,13 @@
         <p>Exemplo 1</p>
         <code>
 
-        <p> $exemplo1 = array('vermelho', 'azul', 'rosas', 'violetas'); </p>
-        <p> list($cor1, $cor2, $flor1, $flor2) = $exemplo1; </p>
-        <p> echo "$flor1 são $cor1, $flor2 são $cor2."; </p>
+          <p> $exemplo1 = array('vermelho', 'azul', 'rosas', 'violetas'); </p>
+          <p> list($cor1, $cor2, $flor1, $flor2) = $exemplo1; </p>
+          <p> echo "$flor1 são $cor1, $flor2 são $cor2."; </p>
         </code>
-        
+
+        <p>Saida:</p>
+
         <?php
 
         $exemplo1 = array('vermelho', 'azul', 'rosas', 'violetas');
@@ -40,17 +42,47 @@
         list($cor1, $cor2, $flor1, $flor2) = $exemplo1;
         echo "$flor1 são $cor1, $flor2 são $cor2.<br>";
 
+        ?>
+        <br>
+        <p>Exemplo 2</p>
 
 
-        // utilizando apenas os dois primeiros valores
+        <code>
+
+          <!-- utilizando apenas os dois primeiros valores -->
+          <p>$exemplo2 = array('vermelho', 'azul', 'rosas', 'violetas');</p>
+          <p>list($cor1, $cor2,,) = $exemplo2;</p>
+          <p>echo "$cor1 é uma cor quente e $cor2 é uma cor frio.";</p>
+        </code>
+        <p>Saida:</p>
+        <?php
+
         $exemplo2 = array('vermelho', 'azul', 'rosas', 'violetas');
-
-
         list($cor1, $cor2,,) = $exemplo2;
         echo "$cor1 é uma cor quente e $cor2 é uma cor frio.";
 
 
-      
+        ?>
+
+        <br>
+        <br>
+
+        <p>Exemplo 3</p>
+
+
+        <code>
+
+          <!-- utilizando apenas os dois primeiros valores -->
+          <p>$exemplo3 = array('vermelho', 'azul', 'rosas', 'violetas');</p>
+
+
+          <p>list(,,, $flor2) = $exemplo3;</p>
+          <p>echo "$flor2 são lindas.";</p>
+
+        </code>
+        <p>Saida:</p>
+        <?php
+
 
         $exemplo3 = array('vermelho', 'azul', 'rosas', 'violetas');
 
@@ -58,22 +90,9 @@
         list(,,, $flor2) = $exemplo3;
         echo "$flor2 são lindas.";
 
-
-
-
-
-        // // Listando apenas alguns deles
-        // list($bebida,, $substancia) = $info;
-        // echo "$bebida tem $substancia.\n";
-
-        // // Ou ignoramos os primeiros valores para conseguir apenas o último 
-        // list(,, $substancia) = $info;
-        // echo "I need $substancia!\n";
-
-        // // list() não funciona com strings
-        // list($bar) = "abcde";
-        // var_dump($bar); // NULL
         ?>
+
+
 
 
 

@@ -14,9 +14,7 @@
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Fila PHP</button>
       </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-      </li>
+
     </ul>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active corfonte" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
@@ -24,8 +22,89 @@
         <p>A estrutura de dados fila segue um padrão conhecido como FIFO (first-in first-out), onde o primeiro a entrar é o primeiro a sair.</p>
         <p>Entre os exemplos de uso de uma fila em um sistema, podemos citar a troca de mensagens entre computadores conectados em uma rede ou até mesmo o controle de documentos para impressão, onde as páginas serão impressas da 1 até a 100, por exemplo.</p>
       </div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">teste2</div>
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">teste3</div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <p>Exemplo 1</p>
+        <p>Um exmplo simple é a chegada de carros em um lava rapido.</p>
+        <p>O primeiro carro a chegar é o primeiro a ser limpo</p>
+
+        <code>
+          <p>$carros = new SplQueue();</p>
+          <p>$carros->enqueue("carro 1");</p>
+          <p>$carros->enqueue("carro 2");</p>
+          <p>$carros->enqueue("carro 3");</p>
+          <p>$carros->enqueue("carro 4");</p>
+          <p>$carros->enqueue("carro 5");</p>
+          <p>$carros->enqueue("carro 6");</p>
+
+          <p>foreach ($carros as $fim) {</p>
+          <p> echo $fim .; }</p>
+
+        </code>
+        <p>Saida</p>
+        <?php
+
+        $carros = new SplQueue();
+        $carros->enqueue("carro 1");
+        $carros->enqueue("carro 2");
+        $carros->enqueue("carro 3");
+        $carros->enqueue("carro 4");
+        $carros->enqueue("carro 5");
+        $carros->enqueue("carro 6");
+
+        foreach ($carros as $fim) {
+          echo $fim . "<br>";
+        }
+
+        ?>
+        <br>
+
+        <p>Exemplo 2</p>
+        <p>Seguindo o exemplo do lava rapido para remover da fila segue a mesma ordem de entrada</p>
+        <p>O primeiro carro a chegar vai ser o primeiro a sair</p>
+
+
+
+        <code>
+          <p>$carros = new SplQueue();</p>
+          <p>$carros->enqueue("carro 1");</p>
+          <p>$carros->enqueue("carro 2");</p>
+          <p>$carros->enqueue("carro 3");</p>
+          <p>$carros->enqueue("carro 4");</p>
+          <p>$carros->enqueue("carro 5");</p>
+          <p>$carros->enqueue("carro 6");</p>
+
+
+          <p>$carros->dequeue();</p>
+
+
+          <p>foreach ($carros as $fim) {</p>
+          <p> echo $fim . ; }</p>
+        </code>
+
+        <p>Saida</p>
+        <?php
+
+        $carros = new SplQueue();
+        $carros->enqueue("carro 1");
+        $carros->enqueue("carro 2");
+        $carros->enqueue("carro 3");
+        $carros->enqueue("carro 4");
+        $carros->enqueue("carro 5");
+        $carros->enqueue("carro 6");
+
+
+        $carros->dequeue();
+
+
+        foreach ($carros as $fim) {
+          echo $fim . "<br>";
+        }
+
+        ?>
+
+
+
+      </div>
     </div>
 
   </article>
