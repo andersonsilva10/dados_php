@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Portal Covid</title>
+  <title>Estrutura de Dados</title>
 </head>
 
 
@@ -25,9 +25,9 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobile_nav" aria-controls="mobile_nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="mx-2 logo" href="index.php"><img src="imagens/icon_32.png" alt="icone"></a>
+        <a class="mx-2 logo" href="index.php"><i class="bi bi-terminal-fill"></i></a>
         <div class="collapse navbar-collapse sublinhado p-3 p-sm-0" id="mobile_nav">
-          <a class="navbar-brand" href="index.php">Portal Covid</a>
+          <a class="navbar-brand" href="index.php">Estrutura de Dados</a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'dados.php') ? "disabled" : ''; ?>" href="dados.php">Estrutura de Dados</a>
