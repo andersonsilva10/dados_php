@@ -5,25 +5,25 @@
 <main class="container">
 
 
-  <article>
-
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">teste1</div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">teste2</div>
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">teste3</div>
+  <article class="row justify-content-center">
+    <div class="col-8">
+      <h2 class="text-center">Estrutura de Dados</h2>
+      <p> Um dos assuntos mais importantes que fazem parte dos fundamentos daqueles que estudam programação e a
+        estrutura
+        de dados. Porém antes de poder entender o que estrutura de dados, devemos assimilar algumas informações:</p>
+      <h4>1. O que são Dados?</h4>
+      <p> Em seu sentido informacional, dados são registros dos atributos de um ente, objeto ou fenômeno, ou seja, são
+        representações de fatos. Exemplo: 12345, steve.</p>
+      <h4>2. O que é Informação?</h4>
+      <p>Informação é um conjunto de dados organizados que fazem sentido a um acontecimento ou fato, que em seu contexto
+        tem um significado. Exemplo: usuário=steve, senha=12345.</p>
+      <p> Tendo isso em mente, estrutura de dados é basicamente a forma como é organizada os dados.</p>
+      <h4>Alguns conceitos</h4>
+      <p>Existem diversas formas de estrutura de dados utilizados na programação, as quatros principais são: listas e
+        suas
+        variações(filas, pilhas, deques, ...), árvores e suas variações(binarias, não binarias, ...), grafos e tabelas
+        hash. Aqui abordaremos alguns conceitos de lista e arvores.</p>
     </div>
-
   </article>
 
 </main>
