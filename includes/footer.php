@@ -4,7 +4,7 @@
       <div class="col-10 col-sm-12 col-md-12 col-lg-10 mb-4">
         <div class="row justify-content-evenly ">
           <h5 class="fontenegrito text-center mb-2">Mapa do Site</h5>
-          
+
           <section class="col-10 col-sm-10 col-md-10 ">
 
             <ul class="row list-unstyled justify-content-center">
@@ -25,25 +25,6 @@
     <section class="row justify-content-center align-items-center py-3 border-top">
       <div class="col-7 col-sm-7 col-md-8 col-lg-7">
         <p class="m-0">© 2021 Anderson e Rafael. Todos os direitos reservados.</p>
-      </div>
-      <div class="col-4 col-sm-4 col-md-2 col-lg-2 m-0">
-        <ul class="row list-unstyled">
-          <li class="col-3">
-            <a class="link-dark" href="https://www.facebook.com/minsaude/">
-              <i class="bi bi-facebook icones"></i>
-            </a>
-          </li>
-          <li class="col-3">
-            <a class="link-dark" href="https://www.instagram.com/minsaude/">
-              <i class="bi bi-instagram icones"></i>
-            </a>
-          </li>
-          <li class="col-3">
-            <a class="link-dark" href="https://twitter.com/minsaude">
-              <i class="bi bi-twitter icones"></i>
-            </a>
-          </li>
-        </ul>
       </div>
     </section>
   </footer>

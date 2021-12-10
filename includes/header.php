@@ -41,6 +41,9 @@
             <li class="nav-item">
               <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'arvore.php') ? "disabled" : ''; ?>" href="arvore.php">Conceito de Árvore</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link <?php echo (basename($_SERVER['PHP_SELF']) == 'quemsomos.php') ? "disabled" : ''; ?>" href="quemsomos.php">Quem Somos</a>
+            </li>
 
           </ul>
           <form class="d-flex">

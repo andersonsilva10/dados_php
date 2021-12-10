@@ -5,7 +5,8 @@
 <main class="container">
 
 
-  <article>
+<article class="row justify-content-center">
+    <div class="col-10">
 
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
       <li class="nav-item" role="presentation">
@@ -16,9 +17,11 @@
       </li>
 
     </ul>
-    <div class="tab-content" id="pills-tabContent">
+    </div>
+    <div class="tab-content col-8" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-        <p class="corfonte"> Uma Lista é um conjunto de dados dispostos e/ou acessáveis em uma sequência determinada. Um exemplo de lista são lista duplamente ligada (ou lista duplamente encadeada) são lista onde cada elemento tem um ponteiro para o próximo elemento e um ponteiro para o elemento anterior. Desta forma, dado um elemento, podemos acessar ambos os elementos adjacentes: o próximo e o anterior. Se tivermos um ponteiro para o último elemento da lista, podemos percorrer a lista em ordem inversa, bastando acessar continuamente o elemento anterior, até alcançar o primeiro elemento da lista, que não tem elemento anterior.
+      <h2>Conceito de Lista</h2>  
+      <p class="corfonte"> Uma Lista é um conjunto de dados dispostos e/ou acessáveis em uma sequência determinada. Um exemplo de lista são lista duplamente ligada (ou lista duplamente encadeada) são lista onde cada elemento tem um ponteiro para o próximo elemento e um ponteiro para o elemento anterior. Desta forma, dado um elemento, podemos acessar ambos os elementos adjacentes: o próximo e o anterior. Se tivermos um ponteiro para o último elemento da lista, podemos percorrer a lista em ordem inversa, bastando acessar continuamente o elemento anterior, até alcançar o primeiro elemento da lista, que não tem elemento anterior.
         </p>
       </div>
       <div class="tab-pane fade corfonte" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
