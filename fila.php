@@ -23,89 +23,100 @@
         <p>Entre os exemplos de uso de uma fila em um sistema, podemos citar a troca de mensagens entre computadores conectados em uma rede ou até mesmo o controle de documentos para impressão, onde as páginas serão impressas da 1 até a 100, por exemplo.</p>
       </div>
       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-        <p>Exemplo 1</p>
+        <h3>Exemplo 1</h3>
         <p>Um exmplo simple é a chegada de carros em um lava rapido.</p>
         <p>O primeiro carro a chegar é o primeiro a ser limpo</p>
 
-        <code>
-          <p>$carros = new SplQueue();</p>
-          <p>$carros->enqueue("carro 1");</p>
-          <p>$carros->enqueue("carro 2");</p>
-          <p>$carros->enqueue("carro 3");</p>
-          <p>$carros->enqueue("carro 4");</p>
-          <p>$carros->enqueue("carro 5");</p>
-          <p>$carros->enqueue("carro 6");</p>
+        <div class="row justify-content-center">
+          <div class="col-10 col-sm-10 col-md-10 col-lg-5">
 
-          <p>foreach ($carros as $fim) {</p>
-          <p> echo $fim .; }</p>
+            <h4>Código</h4>
 
-        </code>
-        <p>Saida</p>
-        <?php
+            <code>
+              <p>$carros = new SplQueue();</p>
+              <p>$carros->enqueue("carro 1");</p>
+              <p>$carros->enqueue("carro 2");</p>
+              <p>$carros->enqueue("carro 3");</p>
+              <p>$carros->enqueue("carro 4");</p>
+              <p>$carros->enqueue("carro 5");</p>
+              <p>$carros->enqueue("carro 6");</p>
 
-        $carros = new SplQueue();
-        $carros->enqueue("carro 1");
-        $carros->enqueue("carro 2");
-        $carros->enqueue("carro 3");
-        $carros->enqueue("carro 4");
-        $carros->enqueue("carro 5");
-        $carros->enqueue("carro 6");
+              <p>foreach ($carros as $fim) {</p>
+              <p> echo $fim .; }</p>
 
-        foreach ($carros as $fim) {
-          echo $fim . "<br>";
-        }
+            </code>
+          </div>
+          <div class="col-10 col-sm-10 col-md-10 col-lg-5">
+            <h4>Saida</h4>
+            <?php
 
-        ?>
-        <br>
+            $carros = new SplQueue();
+            $carros->enqueue("carro 1");
+            $carros->enqueue("carro 2");
+            $carros->enqueue("carro 3");
+            $carros->enqueue("carro 4");
+            $carros->enqueue("carro 5");
+            $carros->enqueue("carro 6");
 
-        <p>Exemplo 2</p>
-        <p>Seguindo o exemplo do lava rapido para remover da fila segue a mesma ordem de entrada</p>
-        <p>O primeiro carro a chegar vai ser o primeiro a sair</p>
+            foreach ($carros as $fim) {
+              echo $fim . "<br>";
+            }
 
+            ?>
+          </div>
 
+          <h3>Exemplo 2</h3>
+          <p>Seguindo o exemplo do lava rapido para remover da fila segue a mesma ordem de entrada</p>
+          <p>O primeiro carro a chegar vai ser o primeiro a sair</p>
+          <div class="row justify-content-center">
+            <div class="col-10 col-sm-10 col-md-10 col-lg-5">
+              <h4>Código</h4>
 
-        <code>
-          <p>$carros = new SplQueue();</p>
-          <p>$carros->enqueue("carro 1");</p>
-          <p>$carros->enqueue("carro 2");</p>
-          <p>$carros->enqueue("carro 3");</p>
-          <p>$carros->enqueue("carro 4");</p>
-          <p>$carros->enqueue("carro 5");</p>
-          <p>$carros->enqueue("carro 6");</p>
-
-
-          <p>$carros->dequeue();</p>
-
-
-          <p>foreach ($carros as $fim) {</p>
-          <p> echo $fim . ; }</p>
-        </code>
-
-        <p>Saida</p>
-        <?php
-
-        $carros = new SplQueue();
-        $carros->enqueue("carro 1");
-        $carros->enqueue("carro 2");
-        $carros->enqueue("carro 3");
-        $carros->enqueue("carro 4");
-        $carros->enqueue("carro 5");
-        $carros->enqueue("carro 6");
+              <code>
+                <p>$carros = new SplQueue();</p>
+                <p>$carros->enqueue("carro 1");</p>
+                <p>$carros->enqueue("carro 2");</p>
+                <p>$carros->enqueue("carro 3");</p>
+                <p>$carros->enqueue("carro 4");</p>
+                <p>$carros->enqueue("carro 5");</p>
+                <p>$carros->enqueue("carro 6");</p>
 
 
-        $carros->dequeue();
+                <p>$carros->dequeue();</p>
 
 
-        foreach ($carros as $fim) {
-          echo $fim . "<br>";
-        }
+                <p>foreach ($carros as $fim) {</p>
+                <p> echo $fim . ; }</p>
+              </code>
+            </div>
+            <div class="col-10 col-sm-10 col-md-10 col-lg-5">
 
-        ?>
+              <h4>Saida</h4>
+              <?php
+
+              $carros = new SplQueue();
+              $carros->enqueue("carro 1");
+              $carros->enqueue("carro 2");
+              $carros->enqueue("carro 3");
+              $carros->enqueue("carro 4");
+              $carros->enqueue("carro 5");
+              $carros->enqueue("carro 6");
+
+
+              $carros->dequeue();
+
+
+              foreach ($carros as $fim) {
+                echo $fim . "<br>";
+              }
+
+              ?>
 
 
 
-      </div>
-    </div>
+            </div>
+          </div>
+        </div>
 
   </article>
 
